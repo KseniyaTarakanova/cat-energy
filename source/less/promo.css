@@ -1,0 +1,13 @@
+.promo-wrapper {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.promo-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: none;
+}

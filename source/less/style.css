@@ -1,0 +1,153 @@
+.slim {
+  color: #444444;
+  font-family: "Arial";
+}
+.slim .title {
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.slim .link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.pro {
+  color: #444444;
+  font-family: "Arial";
+}
+.pro .title {
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.pro .link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.advantages {
+  color: #444444;
+}
+.advantages .title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.advantages {
+  color: #444444;
+  font-family: "Arial";
+}
+.advantages .title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.promo {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.promo .title {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+.example {
+  color: #444444;
+  font-family: "Arial";
+}
+.example .title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.example span {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.example .little-text {
+  font-size: 12px;
+  line-height: 12px;
+}
+.example .prise {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.example .slider {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.contacts {
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Arial";
+}
+.contacts .invite {
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.footer {
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  font-family: "Arial";
+}
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #abc0a5;
+}
+/* .page-main__example-catAfter { */
+.visually-hidden {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+.button {
+  color: #ffffff;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  background-color: #5EAA2F;
+  padding: 10px 90px;
+}
