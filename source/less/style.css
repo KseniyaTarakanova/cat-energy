@@ -57,8 +57,8 @@
   color: #ffffff;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Oswald";
   text-transform: uppercase;
+  font-family: "Oswald";
 }
 .promo .title {
   font-size: 36px;
@@ -145,9 +145,12 @@ p {
   margin: 0;
 }
 .button {
+  font-size: 16px;
+  font-weight: 16px;
   color: #ffffff;
   font-family: "Oswald";
   text-transform: uppercase;
   background-color: #5EAA2F;
-  padding: 10px 90px;
+  padding: 8px 93px;
+  border: none;
 }
