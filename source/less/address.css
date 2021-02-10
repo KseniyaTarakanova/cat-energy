@@ -1,6 +1,13 @@
 .contacts {
-  color: #111111;
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial";
+}
+.contacts .invite {
   font-size: 16px;
   line-height: 18px;
-  font-family: "Arial";
+  color: #111111;
+  font-family: "Oswald";
+  text-transform: uppercase;
 }

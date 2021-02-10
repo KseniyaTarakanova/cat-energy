@@ -1,0 +1,50 @@
+.form {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .program {
+  color: #000000;
+  font-size: 14px;
+}
+.form .title {
+  font-size: 36px;
+  font-weight: 36px;
+  text-transform: none;
+}
+.form .data-kat input {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .radio-button input {
+  color: #222222;
+}
+.form .title-text {
+  font-size: 24px;
+  font-weight: 26px;
+  color: #000000;
+  text-transform: none;
+}
+.form .data-owner input,
+.form .comment input {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .add {
+  color: #000000;
+}
+.form .add .field {
+  font-size: 14px;
+  font-weight: 16px;
+  color: #000000;
+  font-family: "Arial";
+  text-transform: none;
+}

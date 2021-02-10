@@ -118,6 +118,89 @@
   color: #444444;
   font-family: "Arial";
 }
+.catalog {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+}
+.catalog .title {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+}
+.catalog .info1 {
+  color: #222222;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.catalog .text {
+  color: #222222;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.catalog .more-button {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+.catalog-add .title {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+}
+.catalog-add .product {
+  color: #222222;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.catalog-add .text {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+}
+.catalog-add .gift-text {
+  color: #ffffff;
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 20px;
+}
+.form {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .program {
+  color: #000000;
+  font-size: 14px;
+}
+.form .title {
+  font-size: 36px;
+  font-weight: 36px;
+  text-transform: none;
+}
+.form .data-kat input {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .radio-button input {
+  color: ;
+}
 body {
   margin: 20px;
   padding: 0;
@@ -151,6 +234,8 @@ p {
   font-family: "Oswald";
   text-transform: uppercase;
   background-color: #5EAA2F;
-  padding: 8px 93px;
+  width: 280px;
+  height: 40px;
+  text-align: center;
   border: none;
 }

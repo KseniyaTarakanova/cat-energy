@@ -1,0 +1,63 @@
+@black: #000000;
+@dark-grey2: #222222;
+@dark-grey: #444444;
+@font:  "Oswald";
+
+.form {
+    font-size: 16px;
+    font-weight: 18px;
+    color: @dark-grey;
+    font-family: @font;
+    text-transform: uppercase;
+
+    .program {
+        color: @black;
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 36px;
+        font-weight: 36px;
+        text-transform: none;
+    }
+
+    .data-kat {
+        input {
+            font-size: 16px;
+            font-weight: 18px;
+            color: @dark-grey;
+            font-family: @font;
+            text-transform: uppercase;
+        }
+    }
+
+    .radio-button {
+        input {
+            color: @dark-grey2;
+        }
+    }
+
+    .title-text {
+        font-size: 24px;
+        font-weight: 26px;
+        color: @black;
+        text-transform: none;
+    }
+
+    .data-owner,
+    .comment {
+        .data-kat;
+    }
+
+    .add {
+        color: @black;
+        
+        .field {
+            font-size: 14px;
+            font-weight: 16px;
+            color: @black;
+            font-family: "Arial";
+            text-transform: none;
+        }
+    }
+}
