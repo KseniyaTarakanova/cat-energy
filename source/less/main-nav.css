@@ -1,0 +1,43 @@
+.main-nav {
+  color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  height: 198px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .main-nav {
+    flex-direction: row;
+    height: 36px;
+  }
+}
+@media (min-width: 1260px) {
+  .main-nav {
+    flex-direction: row;
+    height: 40px;
+  }
+}
+.main-nav_wrapper .site-list {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 748px) {
+  .main-nav_wrapper {
+    flex-direction: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1260px) {
+  .main-nav_wrapper {
+    flex-direction: flex;
+    justify-content: space-between;
+    width: 478px;
+    margin: 0 auto;
+  }
+}

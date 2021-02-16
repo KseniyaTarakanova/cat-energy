@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .header_wrapper {
+  height: 38px;
+  width: 277px;
+  outline: 1px solid #3700ff;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .header {
+    flex-direction: row;
+    height: 52px;
+    width: 174px;
+  }
+}
+@media (min-width: 1260px) {
+  .header {
+    flex-direction: row;
+    height: 59px;
+    width: 202px;
+  }
+}
