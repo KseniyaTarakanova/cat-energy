@@ -1,0 +1,339 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header .header_wrapper {
+  height: 38px;
+  width: 277px;
+  outline: 1px solid #3700ff;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .header {
+    flex-direction: row;
+    height: 52px;
+    width: 174px;
+  }
+}
+@media (min-width: 1260px) {
+  .header {
+    flex-direction: row;
+    height: 59px;
+    width: 202px;
+  }
+}
+.main-nav {
+  color: #000000;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  height: 198px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .main-nav {
+    flex-direction: row;
+    height: 36px;
+  }
+}
+@media (min-width: 1260px) {
+  .main-nav {
+    flex-direction: row;
+    height: 40px;
+  }
+}
+.main-nav_wrapper .site-list {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 748px) {
+  .main-nav_wrapper {
+    flex-direction: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1260px) {
+  .main-nav_wrapper {
+    flex-direction: flex;
+    justify-content: space-between;
+    width: 478px;
+    margin: 0 auto;
+  }
+}
+.slim {
+  color: #444444;
+  font-family: "Arial";
+}
+.slim .title {
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.slim .link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.pro {
+  color: #444444;
+  font-family: "Arial";
+}
+.pro .title {
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.pro .link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.advantages {
+  color: #444444;
+}
+.advantages .title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.advantages {
+  color: #444444;
+  font-family: "Arial";
+}
+.advantages .title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.promo {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+}
+.promo .title {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+}
+.example {
+  color: #444444;
+  font-family: "Arial";
+}
+.example .title {
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.example span {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Oswald";
+}
+.example .little-text {
+  font-size: 12px;
+  line-height: 12px;
+}
+.example .prise {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.example .slider {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.contacts {
+  color: #444444;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial";
+}
+.contacts .invite {
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.footer {
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+  font-family: "Arial";
+}
+.catalog {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+}
+.catalog .title {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+}
+.catalog .info1 {
+  color: #222222;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.catalog .text {
+  color: #222222;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.catalog .more-button {
+  color: #444444;
+  background-color: #f2f2f2;
+}
+.catalog-add .title {
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 24px;
+}
+.catalog-add .product {
+  color: #222222;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.catalog-add .text {
+  color: #444444;
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: none;
+}
+.catalog-add .gift-text {
+  color: #ffffff;
+  font-family: "Arial";
+  font-size: 16px;
+  line-height: 20px;
+}
+.form {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .program {
+  color: #000000;
+  font-size: 14px;
+}
+.form .title {
+  font-size: 36px;
+  font-weight: 36px;
+  text-transform: none;
+}
+.form .data-kat input {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .radio-button input {
+  color: #222222;
+}
+.form .title-text {
+  font-size: 24px;
+  font-weight: 26px;
+  color: #000000;
+  text-transform: none;
+}
+.form .data-owner input,
+.form .comment input {
+  font-size: 16px;
+  font-weight: 18px;
+  color: #444444;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+.form .add {
+  color: #000000;
+}
+.form .add .field {
+  font-size: 14px;
+  font-weight: 16px;
+  color: #000000;
+  font-family: "Arial";
+  text-transform: none;
+}
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  min-width: 320px;
+  background-color: #abc0a5;
+}
+/* .page-main__example-catAfter { */
+.visually-hidden {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button {
+  font-size: 16px;
+  font-weight: 16px;
+  color: #ffffff;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  background-color: #5EAA2F;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
