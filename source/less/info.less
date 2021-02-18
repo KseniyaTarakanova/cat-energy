@@ -1,13 +1,46 @@
-.promo {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
-    font-family: "Oswald";
+.slim {
+    color: @dark-grey;
+    font-family: "Arial";
+
+    & .title {
+        font-size: 24px;
+        line-height: 37px;
+        color: @black;
+        font-family: @font;
+        text-transform: uppercase;
+    }
+    & .link {
+        font-size: 16px;
+        line-height: 16px;
+        color: @black;
+        font-family: @font;
+        text-transform: uppercase;
+    }
+}
+
+.pro {
+    .slim;
+}
+
+.advantages {
+    color: @dark-grey;
 
     & .title {
         font-size: 36px;
-        line-height: 36px;
-        text-transform: none;
+        line-height: 40px;
+        color: @black;
+        font-family: @font;
+    }
+}
+
+.advantages {
+    color: @dark-grey;
+    font-family: "Arial";
+
+    & .title {
+        font-size: 36px;
+        line-height: 40px;
+        color: @black;
+        font-family: @font;
     }
 }

@@ -6,28 +6,30 @@
 @mobile-width-only: 747px;
 
 .header {
-    display: flex;
-    flex-direction: column;
 
     .header_wrapper {
+        display: flex;
+        justify-content: space-between;
         height: 38px;
-        width: 277px;
+        width: 280px;
 
         outline: 1px solid rgb(55, 0, 255);
         outline-offset: -1px;
+
+        @media (min-width: @tablet-width) {
+            flex-direction: row;
+            height: 52px;
+            width: 174px;
+        }
+    
+        @media (min-width: @desktop-width) {
+            flex-direction: row;
+            height: 59px;
+            width: 202px;
+        }
     }
 
-    @media (min-width: @tablet-width) {
-        flex-direction: row;
-        height: 52px;
-        width: 174px;
-    }
-
-    @media (min-width: @desktop-width) {
-        flex-direction: row;
-        height: 59px;
-        width: 202px;
-    }
+    
 }
 
 

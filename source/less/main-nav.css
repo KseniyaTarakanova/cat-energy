@@ -5,39 +5,32 @@
   font-weight: 500;
   font-family: "Oswald";
   text-transform: uppercase;
+}
+.main-nav .main-nav_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 198px;
   outline: 1px solid red;
   outline-offset: -1px;
 }
-@media (min-width: 748px) {
-  .main-nav {
-    flex-direction: row;
-    height: 36px;
-  }
-}
-@media (min-width: 1260px) {
-  .main-nav {
-    flex-direction: row;
-    height: 40px;
-  }
-}
-.main-nav_wrapper .site-list {
-  margin: 0;
+.main-nav .main-nav_wrapper .site-list {
   padding: 0;
+  margin: 0 auto;
 }
 @media (min-width: 748px) {
-  .main-nav_wrapper {
-    flex-direction: flex;
+  .main-nav .main-nav_wrapper {
+    flex-direction: row;
     justify-content: space-between;
+    height: 36px;
     width: 440px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 1260px) {
-  .main-nav_wrapper {
-    flex-direction: flex;
+  .main-nav .main-nav_wrapper {
+    flex-direction: row;
     justify-content: space-between;
+    height: 40px;
     width: 478px;
-    margin: 0 auto;
   }
 }
