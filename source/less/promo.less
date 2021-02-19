@@ -1,20 +1,59 @@
-.promo {
+@black: #000000;
+@font:  "Oswald";
+
+@tablet-width: 748px;
+@desktop-width: 1260px;
+@mobile-width-only: 747px;
+
+.promo{
     color: #ffffff;
     font-family: "Oswald";
 
     outline: 1px solid rgb(167, 53, 182);
     outline-offset: -1px;
 
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: 90px;
+        
+        .div:nth-child(3) {
+            order: 3;
+        }
+
+        .background {
+            display: none;
+        }
+    }
+
     .promo-title {
         display: block;
-        margin-top: -265px;
-        margin-left: 20px;
-        width: 250px;
-        height: 72px;
-        padding: 0 15px;
         font-size: 36px;
         line-height: 36px;
+        width: 250px;
+        height: 72px;
+        text-align: center;
         text-transform: none;
+        margin-top: -277px;
+        margin-left: 35px;
+        margin-bottom: 27px;
+        
+
+        @media (min-width: @tablet-width) {
+            // display: inline-block;
+            color: @black;
+            font-size: 60px;
+            line-height: 60px;
+            width: 414px;
+            height: 120px;
+            text-align: left;
+            margin: 0;
+            margin-top: 60px;
+
+            .background {
+                visibility: hidden;
+            }
+        }
 
         outline: 1px solid rgb(236, 222, 18);
         outline-offset: -1px;
@@ -25,13 +64,24 @@
         font-size: 14px;
         line-height: 14px;
         text-transform: uppercase;
-        margin-top: 27px;
         width: 198px;
-        height: 14px;
-        padding: 0 15px;
-        font-size: 36px;
-        line-height: 36px;
-        text-transform: none;
+        margin-left: 60px;
+        margin-bottom: 27px;
+
+        @media (min-width: @tablet-width) {
+            // display: inline-block;
+            color: @black;
+            font-size: 20px;
+            line-height: 20px;
+            width: 283px;
+            height: 20px;
+            margin-left: 90px;
+            margin: 45px 0;
+
+            .background {
+                visibility: hidden;
+            }
+        }
 
         outline: 1px solid rgb(236, 134, 18);
         outline-offset: -1px;

@@ -1,7 +1,23 @@
+.header {
+  outline: 1px solid #a0eb15;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .header {
+    display: flex;
+    width: 709px;
+    height: 54px;
+  }
+}
+@media (min-width: 1260px) {
+  .header {
+    display: flex;
+  }
+}
 .header .header_wrapper {
   display: flex;
   justify-content: space-between;
-  height: 38px;
+  height: 66px;
   width: 280px;
   outline: 1px solid #3700ff;
   outline-offset: -1px;
@@ -62,33 +78,72 @@
   outline: 1px solid #a735b6;
   outline-offset: -1px;
 }
+@media (min-width: 748px) {
+  .promo {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 90px;
+  }
+  .promo .div:nth-child(3) {
+    order: 3;
+  }
+  .promo .background {
+    display: none;
+  }
+}
 .promo .promo-title {
   display: block;
-  margin-top: -265px;
-  margin-left: 20px;
-  width: 250px;
-  height: 72px;
-  padding: 0 15px;
   font-size: 36px;
   line-height: 36px;
+  width: 250px;
+  height: 72px;
+  text-align: center;
   text-transform: none;
+  margin-top: -277px;
+  margin-left: 35px;
+  margin-bottom: 27px;
   outline: 1px solid #ecde12;
   outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .promo .promo-title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+    height: 120px;
+    text-align: left;
+    margin: 0;
+    margin-top: 60px;
+  }
+  .promo .promo-title .background {
+    visibility: hidden;
+  }
 }
 .promo .promo-text {
   display: block;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-top: 27px;
   width: 198px;
-  height: 14px;
-  padding: 0 15px;
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: none;
+  margin-left: 60px;
+  margin-bottom: 27px;
   outline: 1px solid #ec8612;
   outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .promo .promo-text {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    width: 283px;
+    height: 20px;
+    margin-left: 90px;
+    margin: 45px 0;
+  }
+  .promo .promo-text .background {
+    visibility: hidden;
+  }
 }
 .slim {
   color: #444444;
