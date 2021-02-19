@@ -45,8 +45,22 @@
         }
     
         @media (min-width: @desktop-width) {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            padding: 0;
             height: 40px;
-            min-width: 478px;
+            color: white;
+
+            .site-list {
+                display: flex;
+                justify-content: space-between;
+                min-width: 478px;
+
+                a {
+                    color: #ffffff;
+                }
+            }
         }
     }
 }
