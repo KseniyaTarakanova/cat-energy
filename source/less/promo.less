@@ -12,6 +12,10 @@
     outline: 1px solid rgb(167, 53, 182);
     outline-offset: -1px;
 
+    .promo-pack {
+        padding: 0 20px;
+    }
+
     @media (min-width: @tablet-width) {
         display: flex;
         flex-flow: column wrap;
@@ -27,20 +31,16 @@
     }
 
     .promo-title {
-        display: block;
+        position: relative;
         font-size: 36px;
         line-height: 36px;
-        width: 250px;
-        height: 72px;
         text-align: center;
         text-transform: none;
         margin-top: -277px;
-        margin-left: 35px;
         margin-bottom: 27px;
         
 
         @media (min-width: @tablet-width) {
-            // display: inline-block;
             color: @black;
             font-size: 60px;
             line-height: 60px;
@@ -60,16 +60,13 @@
     }
 
     .promo-text {
-        display: block;
+        position: relative;
         font-size: 14px;
         line-height: 14px;
         text-transform: uppercase;
-        width: 198px;
-        margin-left: 60px;
         margin-bottom: 27px;
 
         @media (min-width: @tablet-width) {
-            // display: inline-block;
             color: @black;
             font-size: 20px;
             line-height: 20px;
