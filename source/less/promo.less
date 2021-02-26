@@ -5,28 +5,37 @@
 @desktop-width: 1260px;
 @mobile-width-only: 747px;
 
-.promo{
+.promo {
     color: #ffffff;
     font-family: "Oswald";
+    text-align: center;
 
     outline: 1px solid rgb(167, 53, 182);
     outline-offset: -1px;
 
-    .promo-pack {
-        padding: 0 20px;
-    }
-
     @media (min-width: @tablet-width) {
-        display: flex;
-        flex-flow: column wrap;
-        margin-left: 90px;
-        
-        .div:nth-child(3) {
-            order: 3;
-        }
+        text-align: left;
 
         .background {
             display: none;
+        }
+
+        img{
+            opacity: 0;
+        }
+        .promo-pack {
+            width: 709px;
+            height: 609px;
+            text-align: center;
+            background: url(/source/img/index-can-tablet\ 1.svg) no-repeat;
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+        text-align: left;
+
+        .background {
+            display: block;
         }
     }
 
@@ -34,7 +43,6 @@
         position: relative;
         font-size: 36px;
         line-height: 36px;
-        text-align: center;
         text-transform: none;
         margin-top: -277px;
         margin-bottom: 27px;
@@ -44,15 +52,9 @@
             color: @black;
             font-size: 60px;
             line-height: 60px;
-            width: 414px;
             height: 120px;
-            text-align: left;
-            margin: 0;
             margin-top: 60px;
-
-            .background {
-                visibility: hidden;
-            }
+            margin-left: 90px;
         }
 
         outline: 1px solid rgb(236, 222, 18);
@@ -70,14 +72,9 @@
             color: @black;
             font-size: 20px;
             line-height: 20px;
-            width: 283px;
-            height: 20px;
             margin-left: 90px;
-            margin: 45px 0;
-
-            .background {
-                visibility: hidden;
-            }
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
 
         outline: 1px solid rgb(236, 134, 18);
