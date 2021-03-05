@@ -1,32 +1,50 @@
 .promo {
   color: #ffffff;
   font-family: "Oswald";
+  text-align: center;
   outline: 1px solid #a735b6;
   outline-offset: -1px;
 }
 @media (min-width: 748px) {
   .promo {
-    display: flex;
-    flex-flow: column wrap;
-    margin-left: 90px;
-  }
-  .promo .div:nth-child(3) {
-    order: 3;
+    text-align: left;
   }
   .promo .background {
     display: none;
   }
+  .promo img {
+    opacity: 0;
+  }
+  .promo .promo-pack {
+    width: 709px;
+    height: 609px;
+    text-align: center;
+    background: url(/source/img/index-can-tablet\ 1.svg) no-repeat;
+  }
+}
+@media (min-width: 1260px) {
+  .promo {
+    text-align: left;
+  }
+  .promo .background {
+    display: block;
+  }
+  .promo img {
+    opacity: 0;
+  }
+  .promo .promo-pack {
+    width: 552px;
+    height: 499px;
+    text-align: center;
+    background: url(/source/img/index-can.svg) no-repeat;
+  }
 }
 .promo .promo-title {
-  display: block;
+  position: relative;
   font-size: 36px;
   line-height: 36px;
-  width: 250px;
-  height: 72px;
-  text-align: center;
   text-transform: none;
   margin-top: -277px;
-  margin-left: 35px;
   margin-bottom: 27px;
   outline: 1px solid #ecde12;
   outline-offset: -1px;
@@ -36,23 +54,16 @@
     color: #000000;
     font-size: 60px;
     line-height: 60px;
-    width: 414px;
     height: 120px;
-    text-align: left;
-    margin: 0;
     margin-top: 60px;
-  }
-  .promo .promo-title .background {
-    visibility: hidden;
+    margin-left: 90px;
   }
 }
 .promo .promo-text {
-  display: block;
+  position: relative;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  width: 198px;
-  margin-left: 60px;
   margin-bottom: 27px;
   outline: 1px solid #ec8612;
   outline-offset: -1px;
@@ -62,12 +73,17 @@
     color: #000000;
     font-size: 20px;
     line-height: 20px;
-    width: 283px;
-    height: 20px;
     margin-left: 90px;
-    margin: 45px 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
-  .promo .promo-text .background {
-    visibility: hidden;
+}
+@media (min-width: 748px) {
+  .promo .promo-toggle {
+    display: block;
+    position: absolute;
+    margin: 0;
+    margin-top: -580px;
+    margin-left: 85px;
   }
 }
