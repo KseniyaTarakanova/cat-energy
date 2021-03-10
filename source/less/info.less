@@ -1,21 +1,96 @@
 .slim {
     color: @dark-grey;
     font-family: "Arial";
+    padding: 20px;
+    margin: 20px 0;
+    margin-right: 20px;
+    min-height: 230px;
+    background-color: #F2F2F2;
 
     & .title {
         font-size: 24px;
         line-height: 37px;
+        padding-left: 20px;
+        padding-top: 7px;
         color: @black;
         font-family: @font;
         text-transform: uppercase;
     }
+    
     & .link {
+        display: flex;
         font-size: 16px;
         line-height: 16px;
         color: @black;
         font-family: @font;
         text-transform: uppercase;
+
+        a {
+            padding-right: 15px;
+        }
     }
+
+    .catBlack {
+        display: flex;
+        text-align: center;
+        margin-bottom: 30px;
+
+        outline: 1px solid rgb(40, 18, 236);
+        outline-offset: -1px;
+    }
+
+    .wrapper {
+        min-height: 113px;
+        border-bottom: 1px solid #D9D9D9;
+        margin-bottom: 20px;
+        font-family: "Arial";
+
+        outline: 1px solid rgb(40, 18, 236);
+        outline-offset: -1px;
+    }
+
+    @media (min-width: @tablet-width) {
+        min-height: 240px;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-top: 77px;
+        padding-left: 52px;
+        padding-right: 52px;
+        padding-bottom: 57px;
+
+        img {
+           display: none; 
+        }
+
+        .title {
+            padding: 0;
+            font-size: 36px;
+            line-height: 36px;
+        }
+
+        .wrapper {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: "Arial";
+            text-align: left;
+            width: 377px;
+            height: 96px;
+            margin-bottom: 52px;
+        }
+
+        .catBlack {
+            margin-bottom: 24px;
+            background: url(/source/img/cat_back1_tablet.svg) no-repeat;
+        }
+
+        .link {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    outline: 1px solid rgb(236, 222, 18);
+    outline-offset: -1px;
 }
 
 .pro {

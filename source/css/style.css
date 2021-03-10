@@ -35,6 +35,9 @@
     padding: 0;
     background: url(/source/img/logo_tablet.svg) no-repeat;
   }
+  .header .header_wrapper img {
+    opacity: 0;
+  }
 }
 @media (min-width: 1260px) {
   .header .header_wrapper {
@@ -50,7 +53,6 @@
   font-weight: 500;
   font-family: "Oswald";
   text-transform: uppercase;
-  padding-top: 16px;
 }
 .main-nav .main-nav_wrapper {
   display: flex;
@@ -65,18 +67,28 @@
   padding: 0;
   margin: 0 auto;
 }
+.main-nav .main-nav_wrapper .site-list .item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E6E6E6;
+}
 @media (min-width: 748px) {
   .main-nav .main-nav_wrapper {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     padding: 0;
+    padding-top: 16px;
     height: 36px;
   }
   .main-nav .main-nav_wrapper .site-list {
     display: flex;
     justify-content: space-between;
     min-width: 440px;
+  }
+  .main-nav .main-nav_wrapper .site-list .item {
+    padding: 0;
+    border-bottom: none;
   }
 }
 @media (min-width: 1260px) {
@@ -115,23 +127,36 @@
     opacity: 0;
   }
   .promo .promo-pack {
+    display: block;
     width: 709px;
     height: 609px;
-    text-align: center;
+    right: 330px;
+    top: 143px;
+    z-index: 0;
     background: url(/source/img/index-can-tablet\ 1.svg) no-repeat;
   }
 }
 @media (min-width: 1260px) {
   .promo {
     text-align: left;
+    min-height: 585px;
   }
   .promo .background {
     display: block;
+    position: absolute;
+    width: 720px;
+    height: 696px;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background: url(/source/img/index-background-desktop.svg) no-repeat;
   }
   .promo img {
     opacity: 0;
   }
   .promo .promo-pack {
+    display: block;
+    position: absolute;
     width: 552px;
     height: 499px;
     text-align: center;
@@ -155,7 +180,18 @@
     line-height: 60px;
     height: 120px;
     margin-top: 60px;
-    margin-left: 90px;
+    margin-left: 80px;
+  }
+}
+@media (min-width: 1260px) {
+  .promo .promo-title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    height: 120px;
+    margin-top: 114px;
+    margin-left: 80px;
+    z-index: 1;
   }
 }
 .promo .promo-text {
@@ -172,55 +208,203 @@
     color: #000000;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 90px;
+    margin-left: 80px;
     margin-top: 40px;
     margin-bottom: 20px;
   }
 }
+@media (min-width: 1260px) {
+  .promo .promo-text {
+    margin-left: 80px;
+  }
+}
 @media (min-width: 748px) {
   .promo .promo-toggle {
-    display: block;
+    display: inline-block;
     position: absolute;
     margin: 0;
     margin-top: -580px;
-    margin-left: 85px;
+    margin-left: 80px;
+    font-size: 20px;
+    font-weight: 20px;
+    width: 244px;
+    height: 54px;
+  }
+}
+@media (min-width: 1260px) {
+  .promo .promo-toggle {
+    position: relative;
+    font-size: 20px;
+    font-weight: 20px;
+    width: 244px;
+    height: 54px;
+    margin-top: 52px;
+    margin-left: 80px;
   }
 }
 .slim {
   color: #444444;
   font-family: "Arial";
+  padding: 20px;
+  margin: 20px 0;
+  margin-right: 20px;
+  min-height: 230px;
+  background-color: #F2F2F2;
+  outline: 1px solid #ecde12;
+  outline-offset: -1px;
 }
 .slim .title {
   font-size: 24px;
   line-height: 37px;
+  padding-left: 20px;
+  padding-top: 7px;
   color: #000000;
   font-family: "Oswald";
   text-transform: uppercase;
 }
 .slim .link {
+  display: flex;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   font-family: "Oswald";
   text-transform: uppercase;
 }
+.slim .link a {
+  padding-right: 15px;
+}
+.slim .catBlack {
+  display: flex;
+  text-align: center;
+  margin-bottom: 30px;
+  outline: 1px solid #2812ec;
+  outline-offset: -1px;
+}
+.slim .wrapper {
+  min-height: 113px;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 20px;
+  font-family: "Arial";
+  outline: 1px solid #2812ec;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .slim {
+    min-height: 240px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 57px;
+  }
+  .slim img {
+    display: none;
+  }
+  .slim .title {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .slim .wrapper {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial";
+    text-align: left;
+    width: 377px;
+    height: 96px;
+    margin-bottom: 52px;
+  }
+  .slim .catBlack {
+    margin-bottom: 24px;
+    background: url(/source/img/cat_back1_tablet.svg) no-repeat;
+  }
+  .slim .link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .pro {
   color: #444444;
   font-family: "Arial";
+  padding: 20px;
+  margin: 20px 0;
+  margin-right: 20px;
+  min-height: 230px;
+  background-color: #F2F2F2;
+  outline: 1px solid #ecde12;
+  outline-offset: -1px;
 }
 .pro .title {
   font-size: 24px;
   line-height: 37px;
+  padding-left: 20px;
+  padding-top: 7px;
   color: #000000;
   font-family: "Oswald";
   text-transform: uppercase;
 }
 .pro .link {
+  display: flex;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   font-family: "Oswald";
   text-transform: uppercase;
+}
+.pro .link a {
+  padding-right: 15px;
+}
+.pro .catBlack {
+  display: flex;
+  text-align: center;
+  margin-bottom: 30px;
+  outline: 1px solid #2812ec;
+  outline-offset: -1px;
+}
+.pro .wrapper {
+  min-height: 113px;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 20px;
+  font-family: "Arial";
+  outline: 1px solid #2812ec;
+  outline-offset: -1px;
+}
+@media (min-width: 748px) {
+  .pro {
+    min-height: 240px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-bottom: 57px;
+  }
+  .pro img {
+    display: none;
+  }
+  .pro .title {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .pro .wrapper {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial";
+    text-align: left;
+    width: 377px;
+    height: 96px;
+    margin-bottom: 52px;
+  }
+  .pro .catBlack {
+    margin-bottom: 24px;
+    background: url(/source/img/cat_back1_tablet.svg) no-repeat;
+  }
+  .pro .link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .advantages {
   color: #444444;
@@ -423,7 +607,7 @@ body {
   body {
     padding-top: 50px;
     padding-left: 110px;
-    padding-right: 100px;
+    padding-right: 110px;
   }
 }
 .visually-hidden {
