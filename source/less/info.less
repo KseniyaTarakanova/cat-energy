@@ -1,3 +1,10 @@
+.slim-pro {
+    @media (min-width: @desktop-width){
+        display: flex;
+        justify-content: space-between;
+    }    
+}
+
 .slim {
     color: @dark-grey;
     font-family: "Arial";
@@ -40,7 +47,7 @@
     }
 
     .wrapper {
-        min-height: 113px;
+        min-height: 96px;
         border-bottom: 1px solid #D9D9D9;
         margin-bottom: 20px;
         font-family: "Arial";
@@ -57,10 +64,6 @@
         padding-left: 52px;
         padding-right: 52px;
         padding-bottom: 57px;
-
-        img {
-           display: none; 
-        }
 
         .title {
             padding: 0;
@@ -80,12 +83,37 @@
 
         .catBlack {
             margin-bottom: 24px;
-            background: url(/source/img/cat_back1_tablet.svg) no-repeat;
+            
+            .background-cat1 {
+                display: block;
+                position: absolute;
+                width: 200px;
+                height: 211px;
+                padding-right: 28px;
+                right: 62px;
+                top: 1035px;
+                z-index: 1;
+                background: url(/source/img/cat_back1_tablet.svg) no-repeat;
+            }
+            img {
+                display: none;
+            }
         }
 
         .link {
             font-size: 20px;
             line-height: 30px;
+        }
+    }
+
+    @media (min-width: @desktop-width){
+        max-width: 570px;
+        max-height: 374px;
+
+        .catBlack {
+            .background-cat1 {
+                opacity: 0;
+            }
         }
     }
 
@@ -95,6 +123,42 @@
 
 .pro {
     .slim;
+
+    @media (min-width: @tablet-width) {
+        .wrapper {
+            width: 342px;
+        }
+
+        .catBlack {
+            .background-cat2 {
+                display: block;
+                position: absolute;
+                width: 268px;
+                height: 200px;
+                padding-right: 28px;
+                right: 28px;
+                top: 1450px;
+                background: url(/source/img/cat_back2_tablet.svg) no-repeat;
+            }
+            img {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: @desktop-width){
+        max-width: 570px;
+        max-height: 374px;
+
+        .catBlack {
+            .background-cat2 {
+                opacity: 0;
+            }
+        }
+    }
+
+    outline: 1px solid rgb(236, 178, 18);
+    outline-offset: -1px;
 }
 
 .advantages {
