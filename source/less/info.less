@@ -1,3 +1,12 @@
+@black: #000000;
+@dark-grey2: #222222;
+@dark-grey: #444444;
+@font:  "Oswald";
+
+@tablet-width: 748px;
+@desktop-width: 1260px;
+@mobile-width-only: 747px;
+
 .slim-pro {
     @media (min-width: @desktop-width){
         display: flex;
@@ -162,37 +171,26 @@
     @media (min-width: @desktop-width){
         max-width: 570px;
         max-height: 374px;
+        padding-top: 47px;
 
         .catBlack {
+            margin-bottom: 39px;
             .background-cat2 {
                 opacity: 0;
+            }
+            .pro-catBlack {
+                width: 134px;
+                height: 100px;
+                padding-right: 47px;
+                background: url(/source/img/cat_back2_desktop.svg) no-repeat;
+            }
+            
+            .title {
+                padding-top: 32px;
             }
         }
     }
 
     outline: 1px solid rgb(236, 178, 18);
     outline-offset: -1px;
-}
-
-.advantages {
-    color: @dark-grey;
-
-    & .title {
-        font-size: 36px;
-        line-height: 40px;
-        color: @black;
-        font-family: @font;
-    }
-}
-
-.advantages {
-    color: @dark-grey;
-    font-family: "Arial";
-
-    & .title {
-        font-size: 36px;
-        line-height: 40px;
-        color: @black;
-        font-family: @font;
-    }
 }
