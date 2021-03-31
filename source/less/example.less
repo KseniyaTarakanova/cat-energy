@@ -1,12 +1,53 @@
 .example {
+    position: absolute;
     color: @dark-grey;
     font-family: "Arial";
+    background-color: #EAEAEA;
+    left: 0;
+    padding-left: 20px;
 
     & .title {
         font-size: 36px;
         line-height: 40px;
         color: @black;
         font-family: @font;
+        text-align: left;
+        margin-top: 27px;
+        margin-bottom: 33px;;
+    }
+
+    .text {
+        text-align: left;
+        margin-right: 21px;
+        margin-bottom: 25px;
+
+        outline: 1px solid rgb(40, 18, 236);
+        outline-offset: -1px;
+    }
+
+    .example-kiloDay {
+        display: flex;
+        justify-content: space-between;
+        min-width: 236px;
+        margin-left: 43px;
+        margin-right: 41px;
+        margin-bottom: 22px;
+
+        .kilo{
+            img {
+                position: absolute;
+                margin-left: -41px;
+                margin-top: -70px;
+            }
+        }
+
+        .day{
+            img {
+                position: absolute;
+                margin-left: -22px;
+                margin-top: -70px;
+            }
+        }
     }
 
     span {
@@ -14,6 +55,7 @@
         line-height: 24px;
         color: @black;
         font-family: @font;
+        margin-bottom: 9px;
     }
 
     & .little-text {
@@ -27,13 +69,26 @@
         color: @black;
         font-family: @font;
         text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+
+    .catBefore {
+        img{
+            margin: auto;
+            margin-bottom: 27px;
+        }
+        
     }
 
     & .slider {
+        display: flex;
+        justify-content: space-between;
+        width: 207px;
         font-size: 16px;
         line-height: 20px;
         color: @black;
         font-family: @font;
         text-transform: uppercase;
+        margin: 0 auto;
     }
 }

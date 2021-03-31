@@ -616,20 +616,53 @@
   }
 }
 .example {
+  position: absolute;
   color: #444444;
   font-family: "Arial";
+  background-color: #EAEAEA;
+  left: 0;
+  padding-left: 20px;
 }
 .example .title {
   font-size: 36px;
   line-height: 40px;
   color: #000000;
   font-family: "Oswald";
+  text-align: left;
+  margin-top: 27px;
+  margin-bottom: 33px;
+}
+.example .text {
+  text-align: left;
+  margin-right: 21px;
+  margin-bottom: 25px;
+  outline: 1px solid #2812ec;
+  outline-offset: -1px;
+}
+.example .example-kiloDay {
+  display: flex;
+  justify-content: space-between;
+  min-width: 236px;
+  margin-left: 43px;
+  margin-right: 41px;
+  margin-bottom: 22px;
+}
+.example .example-kiloDay .kilo img {
+  position: absolute;
+  margin-left: -41px;
+  margin-top: -70px;
+}
+.example .example-kiloDay .day img {
+  position: absolute;
+  margin-left: -22px;
+  margin-top: -70px;
 }
 .example span {
   font-size: 24px;
   line-height: 24px;
   color: #000000;
   font-family: "Oswald";
+  margin-bottom: 9px;
 }
 .example .little-text {
   font-size: 12px;
@@ -641,19 +674,29 @@
   color: #000000;
   font-family: "Oswald";
   text-transform: uppercase;
+  margin-bottom: 42px;
+}
+.example .catBefore img {
+  margin: auto;
+  margin-bottom: 27px;
 }
 .example .slider {
+  display: flex;
+  justify-content: space-between;
+  width: 207px;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   font-family: "Oswald";
   text-transform: uppercase;
+  margin: 0 auto;
 }
 .contacts {
   color: #444444;
   font-size: 14px;
   line-height: 20px;
   font-family: "Arial";
+  margin-top: 59px;
 }
 .contacts .invite {
   font-size: 16px;
